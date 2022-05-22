@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>project</title>
+        <meta charset="utf-8">
+
+        <link rel = "stylesheet" href="style.css">
+        
+    </head>
+    <body>
+    
+    <div class="topnav">
+        <a href="aclhack.html"> Home </a>
+        <a href="tab1.html">Beginner</a>
+        <a href="tab2.html">Intermediate</a>
+        <a href="tab3.html">Beyond Scratch</a>
+        <a href="AboutUs.html">About Us</a>
+    </div>
+
+    <h1> Intermediate </h1>
+
+    <table style = "border: 3px solid white;">
+
+        <tr>
+            <th>Scratch Block</th>
+            <th>Java Code</th>
+        </tr>
+
+        <tr>
+            <td><img src = "hackathon4.png" width = 300px></td>
+            <td>In Scratch, we can use the forever loop to continuously iterate, or repeat, through something. Usually, this function is not useful in Java. However, there is a loop called a while loop. We can use this to repeat an exact amount of times, like a for loop, or an infinite amount of times. We can use the loop like so: <br>
+                <span class = "code"> while(true) { <br>
+                            System.out.println("Hello world"); <br>
+                        } <br></span>
+                This will continuously print out “Hello world” because the condition is “true.” We can also run the loop an exact number of times like so:<br>
+                <span class = "code">int i = 0; <br>
+                        while(i < 10) { <br>
+                            i++; <br>
+                            System.out.println("Hello world"); <br>
+                        } <br></span>
+                This will run the code 10 times because as i increases, the while condition will eventually become false when i is 10. This is a useful loop to use. Below, we will also learn about a more popular loop used in Java for iteration. <br>
+                </td>
+        </tr>
+        <tr>
+            <td><img src = "hackathon11.png" width = 300px></td>
+            <td>
+                One of the main loops in Java is the for loop. A for loop repeats a certain action a specific number of times. It can also loop through elements, making it extremely useful and popular amongst coders. To use a for loop, we can write something along the lines of <br>
+                <span class = "code">String statement = "Science"; <br>
+                        for (int i = 0; i < statement.length(); i++) { <br>
+                            System.out.println(statement.substring(0, i + 1)); <br>
+                        } <br> </span>
+                Lets take this step by step. We first have our variable, <strong> statement </strong>. This is a String and has the value “Science”.  <br>
+                Next, let’s look at the for loop. We have defined a temporary integer, <strong> i </strong>. This integer has been given an upper bound. It is bound by statement.length(). This returns the length of a String, namely<strong> statement</strong>. <br>
+                Finally, every time we iterate through the loop, we do i++. This is equivalent to adding 1 to i. So, every time we go through the loop, 1 is added to i until we get to statement.length(). Inside the loop, we see we are printing out a substring of <strong>statement</strong>. The substring starts from the first character in <strong>statement</strong> every time, but ends at the index i+1. <br>
+                When this code is run, we will get the result: <br>
+                <span class = "code">S <br>
+                Sc <br>
+                Sci <br>
+                Scie <br>
+                Scien <br>
+                Scienc <br>
+                Science <br> </span>
+                Using this structure, although it might be complicated, we can make for loops do many things. <br>
+                Although massively useful, if a for loop is misused, it can end up running endlessly and overheating your computer, so make sure your code ends the for loop.
+            </td>
+        </tr>
+        <tr>
+            <td><img src = "hackathon1.png" width = 300px></td>
+            <td>You might’ve used the <strong> contains </strong> block before in Scratch. This checks whether a certain letter is in a word, or a String. This is one of the functions, among many others, that we can use in Java. To use this, we can simply code, <br>
+                <span class = "code">String statement = "Science"; <br>
+                boolean isInStatement = statement.contains("en"); </span><br>
+                We have our String “Science”. Then we define a variable with type boolean (this can have a value <em> true </em> or <em>false</em>). We can check whether a given substring is present in our statement and store the value into a boolean. If we print out the boolean, we will get <br>
+                <span class = "code">True </span><br>
+                This is one of the many built-in functions in Java.
+            </td>
+        </tr>
+    
+    </table>
+    
+    </body>
+</html>

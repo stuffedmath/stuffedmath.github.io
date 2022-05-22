@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>project</title>
+        <meta charset="utf-8">
+
+        <link rel = "stylesheet" href="style.css">
+        
+    </head>
+    <body>
+    
+    <div class="topnav">
+        <a href="aclhack.html"> Home </a>
+        <a href="tab1.html">Beginner</a>
+        <a href="tab2.html">Intermediate</a>
+        <a href="tab3.html">Beyond Scratch</a>
+        <a href="AboutUs.html">About Us</a>
+    </div>
+
+    <h1> Beginner </h1>
+
+    <table style = "border: 3px solid white;">
+        <tr>
+            <th>Scratch Block</th>
+            <th>Java Code</th>
+        </tr>
+        <tr>
+            <td><img src = "hackathon8.png" width = 300px></td>
+            <td>One of the most basic functions in Java is the print statement. This simply prints out the input given into the terminal. For example, if we implement the code, <br>
+                <span class = "code"> System.out.println(“hello”); </span> <br>
+                we will see <br>
+                <span class = "code"> Hello </span> <br>
+                on the terminal. Using IntelliJ, we can type in  <br>
+                <span class = "code"> sout </span> <br>
+                and click Enter as a shortcut for a print statement. <br>
+                </td>
+        </tr>
+        <tr>
+            <td><img src = "hackathon7.png" width = 300px></td>
+            <td>Another basic function of Java is the “if, then” statement. To use this, we can write something like <br>
+                <span class = "code"> if (3 + 4 > 10) { <br>
+                    System.out.println("You know math"); <br>
+                } else { <br>
+                    System.out.println("This should never print"); <br>
+                } </span><br>
+                This uses an if statement in a simple way. This code can only return the first statement because 3 + 4 is always less than 10. However, we can write more complex code using this method. We can also add an else statement as shown if the given statement is not true. An example of a more complex if statement is as follows: <br>
+                <span class = "code">if (statement.contains("?")) { <br>
+                   System.out.println("This is a question."); <br>
+                } else if (statement.contains("!")){ <br>
+                   System.out.println("This is an exclamation!"); <br>
+                } else { <br>
+                   System.out.println("This is a regular statement."); <br>
+                } </span> <br>
+                We can add many “else if” statements if we have multiple cases. If statements are one of the most powerful statements in Java. <br>
+                Although massively useful, if a for loop is misused, it can end up running endlessly and overheating your computer, so make sure your code ends the for loop. 
+                </td>
+
+        </tr>
+        <tr>
+            <td><img src = "hackathon2.png" width = 300px></td>
+            <td>
+                Making a variable is the most basic line of code in Java. In The most common types to use are <br>
+                <span class = "code"> int <br>
+                String  </span> <br> 
+                Using these, we can set a variable in this format: <br>
+                <span class = "code"> int classes = 8; </span> <br>
+                We define the type, then the name of the variable, and finally its value. We can change this value by simply using the variable name and setting equal to a different value: <br>
+                <span class = "code"> classes = 10; </span> <br>
+                For the String type, we can set a variable like this: <br>
+                <span class = "code"> String class1Name = “Science”; </span> <br>
+                We can access string characters using the substring method: <br>
+                <span class = "code"> class1Name.substring(3, 5) </span> <br>
+                returns <br>
+                <span class = "code"> enc </span> <br>
+                Remember that in Java, the first index is 0. <br>
+                We can use variables to store all sorts of information using different data types. <br>
+            
+            </td>
+
+        </tr>
+        <tr>
+            <td><img src = "hackathon10.png" width = 330px></td>
+            <td>
+                Getting input from the user is critical for a program to give different inputs based on the user. One of many ways to do this in the terminal is to use Scanner. For this we first can import the Scanner class: <br>
+                <span class = "code"> import java.util.Scanner; </span><br>
+                Then, we can create a variable to take in input: <br>
+                <span class = "code"> Scanner scan = new Scanner (System.in); </span> <br>
+                scan is the variable name. We use System.out for printing lines, so we use System.in for getting input. <br>
+                After that, we can put the raw input in a variable. Lets say we expect an integer input. We can use <br>
+                <span class = "code"> int input = scan.nextInt(); </span><br>
+                This takes the input as an integer instead of using the raw input, which is a String. There are many other ways to take input, but this is one of the ways to do so. <br>
+
+            </td>
+        </tr>
+    </table>
+    
+    </body>
+</html>
